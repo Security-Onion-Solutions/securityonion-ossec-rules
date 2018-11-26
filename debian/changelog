@@ -1,3 +1,9 @@
+securityonion-ossec-rules (20120726-0ubuntu0securityonion8) xenial; urgency=medium
+
+  * securityonion-ossec-rules: do not alert on file addition/deletion in /etc/nsm/rules/backup/ #1346 
+
+ -- Doug Burks <doug.burks@gmail.com>  Mon, 26 Nov 2018 13:14:05 -0500
+
 securityonion-ossec-rules (20120726-0ubuntu0securityonion7) xenial; urgency=medium
 
   * rebuild for xenial 

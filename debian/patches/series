@@ -3,3 +3,4 @@ adjust-ids-alert-severity-to-avoid-duplication-in-Sguil
 Issue-638:-securityonion-ossec-rules:-add-rule-to-ignore-Squert-POST
 add-rule-to-not-block-on-elsa-query
 add-rules-for-Elastic-integration
+securityonion-ossec-rules:-do-not-alert-on-file-additiondeletion-in-etcnsmrulesbackup-#1346
