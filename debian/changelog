@@ -1,0 +1,41 @@
+securityonion-ossec-rules (20120726-0ubuntu0securityonion7) xenial; urgency=medium
+
+  * rebuild for xenial 
+
+ -- Doug Burks <doug.burks@gmail.com>  Thu, 17 May 2018 19:34:11 -0400
+
+securityonion-ossec-rules (20120726-0ubuntu0securityonion6) trusty; urgency=medium
+
+  * add rules for elastic integration 
+
+ -- Doug Burks <doug.burks@gmail.com>  Wed, 20 Dec 2017 10:12:27 -0500
+
+securityonion-ossec-rules (20120726-0ubuntu0securityonion5) trusty; urgency=medium
+
+  * add rule to not block on elsa-query 
+
+ -- Doug Burks <doug.burks@gmail.com>  Mon, 09 Nov 2015 16:04:38 -0500
+
+securityonion-ossec-rules (20120726-0ubuntu0securityonion4) precise; urgency=low
+
+  * Issue 638:	securityonion-ossec-rules: add rule to ignore Squert POST 
+
+ -- Doug Burks <doug.burks@gmail.com>  Sat, 18 Oct 2014 12:13:11 -0400
+
+securityonion-ossec-rules (20120726-0ubuntu0securityonion3) precise; urgency=low
+
+  * adjust ids alert to lower level to avoid duplication in Sguil 
+
+ -- Doug Burks <doug.burks@gmail.com>  Fri, 16 Nov 2012 16:06:30 -0500
+
+securityonion-ossec-rules (20120726-0ubuntu0securityonion2) precise; urgency=low
+
+  * Added ifconfig rules 
+
+ -- Doug Burks <doug.burks@gmail.com>  Fri, 27 Jul 2012 08:02:04 -0400
+
+securityonion-ossec-rules (20120726-0ubuntu0securityonion1) precise; urgency=low
+
+  * Initial release
+
+ -- Doug Burks <doug.burks@gmail.com>  Wed, 25 Jul 2012 19:35:44 -0400

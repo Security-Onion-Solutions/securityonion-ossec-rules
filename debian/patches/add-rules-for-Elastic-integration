@@ -1,0 +1,59 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ securityonion-ossec-rules (20120726-0ubuntu0securityonion6) trusty; urgency=medium
+ .
+   * add rules for elastic integration
+Author: Doug Burks <doug.burks@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- securityonion-ossec-rules-20120726.orig/var/ossec/rules/securityonion_rules.xml
++++ securityonion-ossec-rules-20120726/var/ossec/rules/securityonion_rules.xml
+@@ -1,7 +1,7 @@
+ <!-- @(#) $Id$
+   -  Security Onion rules for OSSEC.
+   -
+-  -  Copyright (C) 2012 Doug Burks and Security Onion
++  -  Copyright (C) 2012-2017 Doug Burks and Security Onion Solutions, LLC
+   -  All rights reserved.
+   -
+   -  This program is a free software; you can redistribute it
+@@ -45,4 +45,22 @@
+     <description>elsa-query</description>
+   </rule>
+ 
++  <rule id="111115" level="0">
++    <if_sid>31533</if_sid>
++    <match>/elasticsearch</match>
++    <description>Ignore high amount of POST requests to /elasticsearch</description>
++  </rule>
++  
++  <rule id="111116" level="0">
++    <if_sid>510</if_sid>
++    <match>/var/lib/docker</match>
++    <description>Ignore Docker File Mismatch</description>
++  </rule>
++
++  <rule id="111117" level="0">
++    <if_sid>31530</if_sid>
++    <url>/es_admin/</url>
++    <description>Ignore POST requests inside /es_admin.</description>
++  </rule>
++
+ </group>

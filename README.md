@@ -1,0 +1,1 @@
+# securityonion-ossec-rules
