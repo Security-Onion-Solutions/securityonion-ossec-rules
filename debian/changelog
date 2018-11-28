@@ -1,3 +1,9 @@
+securityonion-ossec-rules (20120726-0ubuntu0securityonion9) xenial; urgency=medium
+
+  * also ignore known files in /etc/nsm/backup/ #1346
+
+ -- Doug Burks <doug.burks@gmail.com>  Wed, 28 Nov 2018 07:24:16 -0500
+
 securityonion-ossec-rules (20120726-0ubuntu0securityonion8) xenial; urgency=medium
 
   * securityonion-ossec-rules: do not alert on file addition/deletion in /etc/nsm/rules/backup/ #1346 

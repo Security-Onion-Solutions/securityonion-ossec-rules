@@ -87,4 +87,28 @@
     <description>Ignore local.rules files added to /etc/nsm/rules/backup/.</description>
   </rule>
 
+  <rule id="111122" level="0">
+    <if_sid>553</if_sid>
+    <regex>/etc/nsm/backup/\w+-sensor-backup</regex>
+    <description>Ignore sensor backup files deleted from /etc/nsm/backup/.</description>
+  </rule>
+
+  <rule id="111123" level="0">
+    <if_sid>553</if_sid>
+    <regex>/etc/nsm/backup/\w+-server-backup</regex>
+    <description>Ignore server backup files deleted from /etc/nsm/backup/.</description>
+  </rule>
+
+  <rule id="111124" level="0">
+    <if_sid>554</if_sid>
+    <regex>/etc/nsm/backup/\w+-sensor-backup</regex>
+    <description>Ignore sensor backup files added to /etc/nsm/backup/.</description>
+  </rule>
+
+  <rule id="111125" level="0">
+    <if_sid>554</if_sid>
+    <regex>/etc/nsm/backup/\w+-server-backup</regex>
+    <description>Ignore server backup files added to /etc/nsm/backup/.</description>
+  </rule>
+
 </group>

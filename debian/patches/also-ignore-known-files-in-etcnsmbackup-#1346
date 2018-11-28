@@ -1,0 +1,56 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ securityonion-ossec-rules (20120726-0ubuntu0securityonion9) xenial; urgency=medium
+ .
+   * also ignore known files in /etc/nsm/backup/ #1346
+Author: Doug Burks <doug.burks@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- securityonion-ossec-rules-20120726.orig/var/ossec/rules/securityonion_rules.xml
++++ securityonion-ossec-rules-20120726/var/ossec/rules/securityonion_rules.xml
+@@ -87,4 +87,28 @@
+     <description>Ignore local.rules files added to /etc/nsm/rules/backup/.</description>
+   </rule>
+ 
++  <rule id="111122" level="0">
++    <if_sid>553</if_sid>
++    <regex>/etc/nsm/backup/\w+-sensor-backup</regex>
++    <description>Ignore sensor backup files deleted from /etc/nsm/backup/.</description>
++  </rule>
++
++  <rule id="111123" level="0">
++    <if_sid>553</if_sid>
++    <regex>/etc/nsm/backup/\w+-server-backup</regex>
++    <description>Ignore server backup files deleted from /etc/nsm/backup/.</description>
++  </rule>
++
++  <rule id="111124" level="0">
++    <if_sid>554</if_sid>
++    <regex>/etc/nsm/backup/\w+-sensor-backup</regex>
++    <description>Ignore sensor backup files added to /etc/nsm/backup/.</description>
++  </rule>
++
++  <rule id="111125" level="0">
++    <if_sid>554</if_sid>
++    <regex>/etc/nsm/backup/\w+-server-backup</regex>
++    <description>Ignore server backup files added to /etc/nsm/backup/.</description>
++  </rule>
++
+ </group>
