@@ -5,3 +5,4 @@ add-rule-to-not-block-on-elsa-query
 add-rules-for-Elastic-integration
 securityonion-ossec-rules:-do-not-alert-on-file-additiondeletion-in-etcnsmrulesbackup-#1346
 also-ignore-known-files-in-etcnsmbackup-#1346
+detect-apache-auth-failure-correctly-Security-Onion-Solutionssecurity-onion#1391
