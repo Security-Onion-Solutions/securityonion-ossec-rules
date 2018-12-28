@@ -1,3 +1,9 @@
+securityonion-ossec-rules (20120726-0ubuntu0securityonion11) xenial; urgency=medium
+
+  * issue 1408 
+
+ -- Doug Burks <doug.burks@gmail.com>  Fri, 28 Dec 2018 07:37:21 -0500
+
 securityonion-ossec-rules (20120726-0ubuntu0securityonion10) xenial; urgency=medium
 
   * detect apache auth failure correctly Security-Onion-Solutions/security-onion#1391 

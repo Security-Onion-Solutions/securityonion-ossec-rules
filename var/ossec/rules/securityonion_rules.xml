@@ -125,4 +125,11 @@
     <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5,gpg13_7.1,gdpr_IV_35.7.d,gdpr_IV_32.2,</group>
   </rule>
 
+  <rule id="111128" level="0">
+    <if_sid>31101</if_sid>
+    <id>^401</id>
+    <url>/app/kibana|/ui/favicons/manifest.json|/squert/</url>
+    <description>Ignore 401 for Kibana and Squert.</description>
+  </rule>
+
 </group>
