@@ -7,3 +7,4 @@ securityonion-ossec-rules:-do-not-alert-on-file-additiondeletion-in-etcnsmrulesb
 also-ignore-known-files-in-etcnsmbackup-#1346
 detect-apache-auth-failure-correctly-Security-Onion-Solutionssecurity-onion#1391
 securityonion-ossec-rules:-ignore-401-for-Kibana-and-Squert-#1408
+securityonion-ossec-rules:-ignore-alerts-on-common-files-Security-Onion-Solutionssecurity-onion#1455

@@ -1,3 +1,9 @@
+securityonion-ossec-rules (20120726-0ubuntu0securityonion12) xenial; urgency=medium
+
+  * securityonion-ossec-rules: ignore alerts on common files Security-Onion-Solutions/security-onion#1455 
+
+ -- Doug Burks <doug.burks@gmail.com>  Sun, 17 Feb 2019 07:17:49 -0500
+
 securityonion-ossec-rules (20120726-0ubuntu0securityonion11) xenial; urgency=medium
 
   * issue 1408 

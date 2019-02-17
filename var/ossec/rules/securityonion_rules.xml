@@ -1,17 +1,21 @@
 <!-- @(#) $Id$
   -  Security Onion rules for OSSEC.
   -
-  -  Copyright (C) 2012-2017 Doug Burks and Security Onion Solutions, LLC
-  -  All rights reserved.
-  -
-  -  This program is a free software; you can redistribute it
-  -  and/or modify it under the terms of the GNU General Public
-  -  License (version 2) as published by the FSF - Free Software
-  -  Foundation.
-  -
-  -  License details: http://www.ossec.net/en/licensing.html
+  -  Copyright 2012,2013 Doug Burks
+  -  Copyright 2014,2015,2016,2017,2018,2019 Security Onion Solutions, LLC
+  -  This program is free software: you can redistribute it and/or modify
+  -  it under the terms of the GNU General Public License as published by
+  -  the Free Software Foundation, either version 3 of the License, or
+  -  (at your option) any later version.
+  -  
+  -  This program is distributed in the hope that it will be useful,
+  -  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  -  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  -  GNU General Public License for more details.
+  -  
+  -  You should have received a copy of the GNU General Public License
+  -  along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-
 
 <group name="securityonion,syslog,">
 
@@ -130,6 +134,78 @@
     <id>^401</id>
     <url>/app/kibana|/ui/favicons/manifest.json|/squert/</url>
     <description>Ignore 401 for Kibana and Squert.</description>
+  </rule>
+
+  <rule id="111129" level="0">
+    <if_sid>550</if_sid>
+    <match>/etc/curator/action/close.yml</match>
+    <description>Ignore changes for /etc/curator/action/close.yml.</description>
+  </rule>
+
+  <rule id="111130" level="0">
+    <if_sid>550</if_sid>
+    <match>/etc/curator/action/delete.yml</match>
+    <description>Ignore changes for /etc/curator/action/delete.yml.</description>
+  </rule>
+
+  <rule id="111131" level="0">
+    <if_sid>550</if_sid>
+    <match>/etc/nsm/ossec/ossec_agent.conf</match>
+    <description>Ignore changes for /etc/nsm/ossec/ossec_agent.conf.</description>
+  </rule>
+
+  <rule id="111132" level="0">
+    <if_sid>550</if_sid>
+    <match>/etc/nsm/pulledpork/pulledpork.conf</match>
+    <description>Ignore changes for /etc/nsm/pulledpork/pulledpork.conf.</description>
+  </rule>
+
+  <rule id="111133" level="0">
+    <if_sid>550</if_sid>
+    <match>/etc/nsm/rules/downloaded.rules</match>
+    <description>Ignore changes for /etc/nsm/rules/downloaded.rules.</description>
+  </rule>
+
+  <rule id="111134" level="0">
+    <if_sid>550</if_sid>
+    <match>/etc/nsm/rules/sid-msg.map</match>
+    <description>Ignore changes for /etc/nsm/rules/sid-msg.map.</description>
+  </rule>
+
+  <rule id="111135" level="0">
+    <if_sid>550</if_sid>
+    <regex>/etc/nsm/\w+/barnyard2.waldo</regex>
+    <description>Ignore changes for /etc/nsm/\w+/barnyard2.waldo.</description>
+  </rule>
+
+  <rule id="111136" level="0">
+    <if_sid>550</if_sid>
+    <regex>/etc/nsm/\w+/bpf-pcap.ops</regex>
+    <description>Ignore changes for /etc/nsm/\w+/bpf-pcap.ops.</description>
+  </rule>
+
+  <rule id="111137" level="0">
+    <if_sid>550</if_sid>
+    <regex>/etc/nsm/\w+/sensor.conf</regex>
+    <description>Ignore changes for /etc/nsm/\w+/sensor.conf.</description>
+  </rule>
+
+  <rule id="111138" level="0">
+    <if_sid>550</if_sid>
+    <regex>/etc/nsm/\w+/sid-msg.map</regex>
+    <description>Ignore changes for /etc/nsm/\w+/sid-msg.map.</description>
+  </rule>
+
+  <rule id="111139" level="0">
+    <if_sid>550</if_sid>
+    <regex>/etc/nsm/\w+/snort.conf</regex>
+    <description>Ignore changes for /etc/nsm/\w+/snort.conf.</description>
+  </rule>
+
+  <rule id="111140" level="0">
+    <if_sid>550</if_sid>
+    <regex>/etc/nsm/\w+/suricata.yaml</regex>
+    <description>Ignore changes for /etc/nsm/\w+/suricata.yaml.</description>
   </rule>
 
 </group>
